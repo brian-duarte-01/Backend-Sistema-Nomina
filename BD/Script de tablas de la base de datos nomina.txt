@@ -1,0 +1,121 @@
+Script de tabla empresa
+
+CREATE TABLE empresa(
+id_empresa number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) primary key,
+nombre varchar2(2000),
+calle varchar2(2000),
+avenida varchar2(2000),
+zona varchar2(2000),
+telefono number,
+nit varchar2(2000),
+correo varchar2(2000)
+);
+
+script de tabla empleado
+
+CREATE TABLE empleado(
+id_empleado number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) primary key,
+primer_nombre varchar2(2000),
+segundo_nombre varchar2(2000),
+primer_apellido varchar2(2000),
+segundo_apellido varchar2(2000),
+nit varchar2(2000),
+calle varchar2(2000),
+avenida varchar2(2000),
+zona varchar2(2000),
+telefono number,
+correo varchar2(2000),
+empresa varchar(2000)
+);
+
+script de tabla tipo pago
+
+CREATE TABLE tipo_pago(
+id_tipo_pago number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+tipo_pago varchar2(2000)
+);
+
+Script de tabla estado
+
+CREATE TABLE estado(
+id_estado number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+tipo_estado varchar2(2000)
+);
+
+Script de tabla vacaciones
+
+CREATE TABLE vacaciones(
+id_vacaciones number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+empleado varchar2(2000),
+meses number,
+dias number,
+sueldo number(10,2),
+total_vacaciones number(10,2),
+tipo_pago varchar2(2000),
+estado varchar2(2000)
+);
+
+Script de tabla Bono 14
+
+CREATE TABLE bono14(
+id_bono14 number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+empleado varchar2(2000),
+meses number,
+dias number,
+salario number(10,2),
+total_bono14 number(10,2),
+tipo_pago varchar2(2000),
+estado varchar2(2000)
+);
+
+Script de table aguinaldo
+
+CREATE TABLE aguinaldo(
+id_aguinaldo number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+empleado varchar2(2000),
+meses number,
+dias number,
+salario number(10,2),
+total_aguinaldo number(10,2),
+tipo_pago varchar2(2000),
+estado varchar2(2000)
+);
+
+Script de tabla indemizacion
+
+CREATE TABLE indemizacion(
+id_indemizacion number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+empleado varchar2(2000),
+años number,
+meses number,
+dias number,
+salario number(10,2),
+total_indemizacion number(10,2),
+tipo_pago varchar2(2000),
+estado varchar2(2000)
+);
+
+
+Script de tabla pagos
+
+CREATE TABLE pagos(
+id_pagos number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+empleado varchar2(2000),
+salario number(10,2),
+bonificacion number(10,2),
+igss_empleado number(10,2),
+salario_devengado number(10,2),
+cuota_patronal number(10,2),
+total_empleado number(10,2),
+total_patronal number(10,2),
+salario_quincenal number(10,2),
+bonificacion_quincenal number(10,2),
+igss_empleado_quincenal number(10,2),
+salario_devengado_quincenal number(10,2),
+igss_patronal_quincenal number(10,2),
+total_empleado_quincenal number(10,2),
+total_patronal_quincenal number(10,2),
+tipo_pago varchar2(2000),
+estado varchar2(2000)
+);
+
