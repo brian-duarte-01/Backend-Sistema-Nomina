@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Options;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -9,7 +11,6 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
-builder.Services.AddCors();
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
