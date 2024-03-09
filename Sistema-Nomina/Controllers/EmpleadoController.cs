@@ -16,9 +16,9 @@ namespace Sistema_Nomina.Controllers
 
         [HttpGet]
         [Route("Buscar")]
-        public ActionResult getBuscarEmpleado(string primer_nombre="")
+        public ActionResult getBuscarEmpleado(string nit="")
         {
-            return er.getBuscarEmpleado(primer_nombre);
+            return er.getBuscarEmpleado(nit);
         }
 
 

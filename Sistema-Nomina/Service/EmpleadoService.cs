@@ -9,7 +9,7 @@ namespace Sistema_Nomina.Service
       
         // endPoint para buscar el empleado
 
-        public ActionResult getBuscarEmpleado(string primer_nombre)
+        public ActionResult getBuscarEmpleado(string nit)
         {
             try
             {
@@ -19,11 +19,11 @@ namespace Sistema_Nomina.Service
 
                     var sqlQuery = (
                         from sql in db.Empleados
-                        where sql.PrimerNombre == primer_nombre
+                        where sql.Nit == nit
                         select sql
                         ).ToList();
 
-                    if (primer_nombre == "")
+                    if (nit == "")
                     {
                         var sqlListar = db.Empleados.ToList();
                         return Ok(sqlListar);
