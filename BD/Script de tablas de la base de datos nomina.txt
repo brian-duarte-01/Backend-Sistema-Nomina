@@ -127,3 +127,19 @@ tipo_pago varchar2(2000),
 estado varchar2(2000)
 );
 
+Script tabla tipo pago
+
+
+create table tipo_pago(
+    id_tipo_pago number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+    tipo_pago varchar2(2000)
+);
+
+Script tabla estado
+
+create table estado(
+ id_status number GENERATED ALWAYS as IDENTITY(START with 1 INCREMENT by 1) PRIMARY KEY,
+ status varchar2(2000)
+);
+
+

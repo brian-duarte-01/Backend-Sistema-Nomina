@@ -1,0 +1,6 @@
+@Sistema_Nominas_HostAddress = http://localhost:5043
+
+GET {{Sistema_Nominas_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

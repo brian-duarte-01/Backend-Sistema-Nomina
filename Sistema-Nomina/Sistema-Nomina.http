@@ -1,6 +1,0 @@
-@Sistema_Nomina_HostAddress = http://localhost:5286
-
-GET {{Sistema_Nomina_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
