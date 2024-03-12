@@ -168,6 +168,79 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
+    "Method": "getTipoPago",
+    "RelativePath": "api/TipoPago",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
+    "Method": "postTipoPago",
+    "RelativePath": "api/TipoPago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.TipoPagoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
+    "Method": "putTipoPago",
+    "RelativePath": "api/TipoPago/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.TipoPagoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
+    "Method": "deleteTipoPago",
+    "RelativePath": "api/TipoPago/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
+    "Method": "getCountTipoPago",
+    "RelativePath": "api/TipoPago/Count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sistema_Nominas.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",
