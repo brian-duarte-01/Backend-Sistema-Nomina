@@ -168,6 +168,174 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Sistema_Nominas.Controllers.EstadoController",
+    "Method": "getEstado",
+    "RelativePath": "api/Estado",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.EstadoController",
+    "Method": "postEstado",
+    "RelativePath": "api/Estado",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.EstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.EstadoController",
+    "Method": "putEstado",
+    "RelativePath": "api/Estado/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.EstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.EstadoController",
+    "Method": "deleteEstado",
+    "RelativePath": "api/Estado/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.EstadoController",
+    "Method": "getCountEstado",
+    "RelativePath": "api/Estado/Count",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "get",
+    "RelativePath": "api/Pago",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "post",
+    "RelativePath": "api/Pago",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.PagosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "put",
+    "RelativePath": "api/Pago/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.PagosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "delete",
+    "RelativePath": "api/Pago/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "getBuscar",
+    "RelativePath": "api/Pago/Buscar",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "empleado",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "getVisualizar",
+    "RelativePath": "api/Pago/Visualizar/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
     "Method": "getTipoPago",
     "RelativePath": "api/TipoPago",
