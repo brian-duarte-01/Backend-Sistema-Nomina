@@ -12,7 +12,7 @@ namespace Sistema_Nominas.Controllers
     public class PagoController : ControllerBase
     {
 
-        private PagoRepositorie pr = new PagoRepositorie(new PagoService());
+        private PrestacionesRepositorie pr = new PrestacionesRepositorie(new PagoService());
 
         [HttpGet]
         public ActionResult get()

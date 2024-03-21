@@ -45,9 +45,13 @@ namespace Sistema_Nominas.Service
                     {
                         return Ok(Sql);
                     }
-                    else
+                    else if(sqlQuery.Any())
                     {
                         return Ok(sqlQuery);
+                    }
+                    else
+                    {
+                        return Ok("No se encontre el empleado!!");
                     }
                 }
             }
@@ -70,7 +74,15 @@ namespace Sistema_Nominas.Service
                         select sql
                         ).ToList();
 
-                    return Ok(sqlQuery);
+                    if (sqlQuery.Any())
+                    {
+
+                        return Ok(sqlQuery);
+                    }
+                    else
+                    {
+                        return Ok("No se encontró el empleado!!");
+                    }
                 }
             }
             catch (Exception ex)

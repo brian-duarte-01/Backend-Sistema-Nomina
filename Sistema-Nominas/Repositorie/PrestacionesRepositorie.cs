@@ -4,12 +4,11 @@ using Sistema_Nominas.Request;
 
 namespace Sistema_Nominas.Repositorie
 {
-    public class PagoRepositorie 
+    public class PrestacionesRepositorie
     {
-
         public IPrestaciones iprestaciones;
 
-        public PagoRepositorie(IPrestaciones _iprestaciones)
+       public PrestacionesRepositorie(IPrestaciones _iprestaciones)
         {
             this.iprestaciones = _iprestaciones;
         }
@@ -26,7 +25,7 @@ namespace Sistema_Nominas.Repositorie
 
         public ActionResult getVisualizar(int id)
         {
-            return this.iprestaciones.getVisualizar(id);    
+            return this.iprestaciones.getVisualizar(id);
         }
 
         public ActionResult post([FromBody] PagosRequest request)
@@ -36,7 +35,7 @@ namespace Sistema_Nominas.Repositorie
 
         public ActionResult put(int id, [FromBody] PagosRequest request)
         {
-            return this.iprestaciones.put(id, request); 
+            return this.iprestaciones.put(id, request);
         }
 
         public ActionResult delete(int id)
