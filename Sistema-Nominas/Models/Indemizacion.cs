@@ -9,11 +9,11 @@ public partial class Indemizacion
 
     public string? Empleado { get; set; }
 
-    public decimal? Años { get; set; }
+    public int? Años { get; set; }
 
-    public decimal? Meses { get; set; }
+    public int? Meses { get; set; }
 
-    public decimal? Dias { get; set; }
+    public int? Dias { get; set; }
 
     public decimal? Salario { get; set; }
 

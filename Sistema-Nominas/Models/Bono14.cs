@@ -9,9 +9,9 @@ public partial class Bono14
 
     public string? Empleado { get; set; }
 
-    public decimal? Meses { get; set; }
+    public int? Meses { get; set; }
 
-    public decimal? Dias { get; set; }
+    public int? Dias { get; set; }
 
     public decimal? Salario { get; set; }
 
