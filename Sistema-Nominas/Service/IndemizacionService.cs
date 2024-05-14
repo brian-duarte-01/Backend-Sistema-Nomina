@@ -95,9 +95,9 @@ namespace Sistema_Nominas.Service
                     decimal? resultado = 0;
                     Models.Indemizacion indemizacion = new Models.Indemizacion();
                     indemizacion.Empleado = request.empleado;
-                    indemizacion.Años = request.años * 365;
+                    indemizacion.Anos = request.anos * 365;
                     indemizacion.Meses = request.meses * 30;
-                    indemizacion.Dias = indemizacion.Años + indemizacion.Meses;
+                    indemizacion.Dias = indemizacion.Anos + indemizacion.Meses;
                     indemizacion.Salario = request.salario;
                     resultado = indemizacion.Salario / 365m;
                     indemizacion.TotalIndemizacion = resultado * indemizacion.Dias;
@@ -123,9 +123,9 @@ namespace Sistema_Nominas.Service
                     decimal? resultado = 0;
                     Models.Indemizacion indemizacion = db.Indemizacions.Find(id);
                     indemizacion.Empleado = request.empleado;
-                    indemizacion.Años = request.años * 365;
+                    indemizacion.Anos = request.anos * 365;
                     indemizacion.Meses = request.meses * 30;
-                    indemizacion.Dias = indemizacion.Años + indemizacion.Meses;
+                    indemizacion.Dias = indemizacion.Anos + indemizacion.Meses;
                     indemizacion.Salario = request.salario;
                     resultado = indemizacion.Salario / 365m;
                     indemizacion.TotalIndemizacion = resultado * indemizacion.Dias;

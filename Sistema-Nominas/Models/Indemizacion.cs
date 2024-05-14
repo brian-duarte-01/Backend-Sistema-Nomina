@@ -9,7 +9,7 @@ public partial class Indemizacion
 
     public string? Empleado { get; set; }
 
-    public int? Años { get; set; }
+    public int? Anos { get; set; }
 
     public int? Meses { get; set; }
 

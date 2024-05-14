@@ -236,7 +236,7 @@ public partial class ModelContext : DbContext
                 .ValueGeneratedOnAdd()
                 .HasColumnType("NUMBER")
                 .HasColumnName("ID_INDEMIZACION");
-            entity.Property(e => e.Años)
+            entity.Property(e => e.Anos)
                 .HasColumnType("NUMBER")
                 .HasColumnName("AÑOS");
             entity.Property(e => e.Dias)

@@ -49,7 +49,8 @@ namespace Sistema_Nominas.Service
                     }
                     else
                     {
-                        return Ok("No se encontró el usuario!!");
+                        var respuesta = "No se encontró el usuario!!";
+                        return Ok(respuesta);
                     }
                 }
             }
