@@ -42,5 +42,10 @@ namespace Sistema_Nominas.Repositorie
         {
             return this.indemizacion.delete(id);
         }
+
+        public ActionResult pagar([FromBody] IndemizacionPagarRequest request)
+        {
+            return this.indemizacion.pagar(request);
+        }
     }
 }

@@ -27,6 +27,14 @@ namespace Sistema_Nominas.Controllers
             return er.getEstado();
         }
 
+
+        [HttpGet]
+        [Route("{id}")]
+        public ActionResult obtenerEstado(int id)
+        {
+            return er.obtenerEstado(id);
+        }
+
         [HttpPost]
         public ActionResult postEstado([FromBody] EstadoRequest request)
         {
@@ -46,5 +54,7 @@ namespace Sistema_Nominas.Controllers
         {
             return er.deleteEstado(id);
         }
+
+       
     }
 }

@@ -38,9 +38,16 @@ namespace Sistema_Nominas.Repositorie
             return this.iprestaciones.put(id, request);
         }
 
+        public ActionResult pagar([FromBody] PagoPagarRequest request)
+        {
+          return  this.iprestaciones.pagar(request);
+        }
+
         public ActionResult delete(int id)
         {
             return this.iprestaciones.delete(id);
         }
+
+        
     }
 }

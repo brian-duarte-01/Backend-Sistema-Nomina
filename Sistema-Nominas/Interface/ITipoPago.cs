@@ -5,6 +5,7 @@ namespace Sistema_Nominas.Interface
     public interface ITipoPago
     {
         public ActionResult getTipoPago();
+        public ActionResult obtenerTipoPago(int id);
         public ActionResult getCountTipoPago();
         public ActionResult postTipoPago([FromBody] Request.TipoPagoRequest request);
         public ActionResult putTipoPago(int id, [FromBody] Request.TipoPagoRequest request);

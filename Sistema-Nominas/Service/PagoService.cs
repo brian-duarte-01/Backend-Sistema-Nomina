@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Sistema_Nominas.Interface;
 using Sistema_Nominas.Request;
+using System.Data.SqlTypes;
 
 namespace Sistema_Nominas.Service
 {
@@ -161,6 +163,32 @@ namespace Sistema_Nominas.Service
             }
         }
 
+        public ActionResult pagar([FromBody] PagoPagarRequest request)
+        {
+            try
+            {
+                using (Models.ModelContext db = new Models.ModelContext())
+                {
+                    var pagos = db.Pagos.ToList();
+
+                    // Actualizar el estado de cada registro
+                    foreach (var pago in pagos)
+                    {
+                        pago.Estado = request.estado;
+                        db.Entry(pago).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                    }
+
+                    // Guardar cambios en la base de datos
+                    db.SaveChanges();
+                    return Ok("Se realizo correctamente!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         public ActionResult delete(int id)
         {
             try
@@ -178,5 +206,7 @@ namespace Sistema_Nominas.Service
                 return BadRequest(ex.Message);
             }
         }
+
+        
     }
 }

@@ -27,6 +27,38 @@
   },
   {
     "ContainingType": "Sistema_Nominas.Controllers.AguinaldoController",
+    "Method": "pagar",
+    "RelativePath": "api/Aguinaldo",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.AguinaldoPagarRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.AguinaldoController",
+    "Method": "getVisualizar",
+    "RelativePath": "api/Aguinaldo/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.AguinaldoController",
     "Method": "put",
     "RelativePath": "api/Aguinaldo/{id}",
     "HttpMethod": "PUT",
@@ -79,22 +111,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sistema_Nominas.Controllers.AguinaldoController",
-    "Method": "getVisualizar",
-    "RelativePath": "api/Aguinaldo/Visualizar/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Sistema_Nominas.Controllers.Bono14Controller",
     "Method": "get",
     "RelativePath": "api/Bono14",
@@ -115,6 +131,38 @@
       {
         "Name": "request",
         "Type": "Sistema_Nominas.Request.Bono14Request",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.Bono14Controller",
+    "Method": "pagar",
+    "RelativePath": "api/Bono14",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.Bono14PagarRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.Bono14Controller",
+    "Method": "getVisualizar",
+    "RelativePath": "api/Bono14/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -174,22 +222,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sistema_Nominas.Controllers.Bono14Controller",
-    "Method": "getVisualizar",
-    "RelativePath": "api/Bono14/Visualizar/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Sistema_Nominas.Controllers.EmpleadoController",
     "Method": "getEmpleado",
     "RelativePath": "api/Empleado",
@@ -210,6 +242,22 @@
       {
         "Name": "request",
         "Type": "Sistema_Nominas.Request.EmpleadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.EmpleadoController",
+    "Method": "getVisualizarEmpleado",
+    "RelativePath": "api/Empleado/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -279,22 +327,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sistema_Nominas.Controllers.EmpleadoController",
-    "Method": "getVisualizarEmpleado",
-    "RelativePath": "api/Empleado/Visualizar/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Sistema_Nominas.Controllers.EmpresaController",
     "Method": "getEmpresa",
     "RelativePath": "api/Empresa",
@@ -315,6 +347,22 @@
       {
         "Name": "request",
         "Type": "Sistema_Nominas.Request.EmpresaRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.EmpresaController",
+    "Method": "obtenerEmpresa",
+    "RelativePath": "api/Empresa/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -378,6 +426,22 @@
       {
         "Name": "request",
         "Type": "Sistema_Nominas.Request.EstadoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.EstadoController",
+    "Method": "obtenerEstado",
+    "RelativePath": "api/Estado/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -458,6 +522,38 @@
   },
   {
     "ContainingType": "Sistema_Nominas.Controllers.IndemizacionController",
+    "Method": "pagar",
+    "RelativePath": "api/Indemizacion",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.IndemizacionPagarRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.IndemizacionController",
+    "Method": "getVisualizar",
+    "RelativePath": "api/Indemizacion/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.IndemizacionController",
     "Method": "put",
     "RelativePath": "api/Indemizacion/{id}",
     "HttpMethod": "PUT",
@@ -510,22 +606,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sistema_Nominas.Controllers.IndemizacionController",
-    "Method": "getVisualizar",
-    "RelativePath": "api/Indemizacion/Visualizar/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Sistema_Nominas.Controllers.PagoController",
     "Method": "get",
     "RelativePath": "api/Pago",
@@ -546,6 +626,38 @@
       {
         "Name": "request",
         "Type": "Sistema_Nominas.Request.PagosRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "pagar",
+    "RelativePath": "api/Pago",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.PagoPagarRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
+    "Method": "getVisualizar",
+    "RelativePath": "api/Pago/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -605,22 +717,6 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "Sistema_Nominas.Controllers.PagoController",
-    "Method": "getVisualizar",
-    "RelativePath": "api/Pago/Visualizar/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
     "Method": "getTipoPago",
     "RelativePath": "api/TipoPago",
@@ -641,6 +737,22 @@
       {
         "Name": "request",
         "Type": "Sistema_Nominas.Request.TipoPagoRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.TipoPagoController",
+    "Method": "obtenerTipoPago",
+    "RelativePath": "api/TipoPago/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
@@ -721,6 +833,38 @@
   },
   {
     "ContainingType": "Sistema_Nominas.Controllers.VacacionesController",
+    "Method": "pagar",
+    "RelativePath": "api/Vacaciones",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Sistema_Nominas.Request.VacacionesPagarRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.VacacionesController",
+    "Method": "getVisualizar",
+    "RelativePath": "api/Vacaciones/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "Sistema_Nominas.Controllers.VacacionesController",
     "Method": "put",
     "RelativePath": "api/Vacaciones/{id}",
     "HttpMethod": "PUT",
@@ -768,22 +912,6 @@
         "Name": "empleado",
         "Type": "System.String",
         "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "Sistema_Nominas.Controllers.VacacionesController",
-    "Method": "getVisualizar",
-    "RelativePath": "api/Vacaciones/Visualizar/{id}",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": true
       }
     ],
     "ReturnTypes": []

@@ -40,6 +40,29 @@ namespace Sistema_Nominas.Service
             }
         }
 
+        public ActionResult obtenerEstado(int id)
+        {
+            try
+            {
+                using (Models.ModelContext db = new Models.ModelContext())
+                {
+                    var sqlQuery =
+                        (
+                        from sql in db.Estados
+                        where sql.IdStatus == id
+                        orderby sql.Status 
+                        select sql
+                        ).ToList();
+
+                    return Ok(sqlQuery);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         public ActionResult postEstado([FromBody] EstadoRequest request)
         {
             try
@@ -95,5 +118,7 @@ namespace Sistema_Nominas.Service
                 return BadRequest(ex.Message);
             }
         }
+
+       
     }
 }

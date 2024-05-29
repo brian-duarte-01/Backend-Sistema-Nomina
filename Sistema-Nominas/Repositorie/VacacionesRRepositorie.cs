@@ -4,7 +4,7 @@ using Sistema_Nominas.Request;
 
 namespace Sistema_Nominas.Repositorie
 {
-    public class VacacionesRRepositorie 
+    public class VacacionesRRepositorie
     {
 
         public IVacaciones ivaciones;
@@ -42,6 +42,11 @@ namespace Sistema_Nominas.Repositorie
         public ActionResult delete(int id)
         {
             return this.ivaciones.delete(id);
+        }
+
+        public ActionResult pagar([FromBody] VacacionesPagarRequest request)
+        {
+            return this.ivaciones.pagar(request);
         }
     }
 }

@@ -4,7 +4,7 @@ using Sistema_Nominas.Request;
 
 namespace Sistema_Nominas.Repositorie
 {
-    public class EmpresaRepositorie 
+    public class EmpresaRepositorie
     {
 
         // utilizamos el patron de diseño inyeccion de depencia
@@ -21,6 +21,11 @@ namespace Sistema_Nominas.Repositorie
             return this.iempresa.getEmpresa();
         }
 
+        public ActionResult obtenerEmpresa(int id)
+        {
+            return this.iempresa.obtenerEmpresa(id);
+        }
+
         public ActionResult postEmpresa([FromBody] EmpresaRequest request)
         {
             return this.iempresa.postEmpresa(request);
@@ -35,5 +40,7 @@ namespace Sistema_Nominas.Repositorie
         {
             return this.iempresa.deleteEmpresa(id);
         }
+
+        
     }
 }

@@ -40,6 +40,28 @@ namespace Sistema_Nominas.Service
             }
         }
 
+        public ActionResult obtenerTipoPago(int id)
+        {
+            try
+            {
+                using (Models.ModelContext db = new Models.ModelContext())
+                {
+                    var sqlQuery =
+                        (
+                        from sql in db.TipoPagos
+                        where sql.IdTipoPago == id
+                        orderby sql.TipoPago1
+                        select sql
+                        ).ToList();
+                    return Ok(sqlQuery);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         public ActionResult postTipoPago([FromBody] TipoPagoRequest request)
         {
             try
@@ -94,5 +116,7 @@ namespace Sistema_Nominas.Service
                 return BadRequest(ex.Message);
             }
         }
+
+        
     }
 }

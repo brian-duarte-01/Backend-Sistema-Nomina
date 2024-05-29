@@ -27,6 +27,28 @@ namespace Sistema_Nominas.Service
             }
         }
 
+        public ActionResult obtenerEmpresa(int id)
+        {
+            try
+            {
+                using (Models.ModelContext db = new Models.ModelContext())
+                {
+                    var sqlQuery =
+                        (
+                        from sql in db.Empresas
+                        where sql.IdEmpresa == id
+                        orderby sql.Nombre
+                        select sql
+                        ).ToList();
+                    return Ok(sqlQuery);
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
+
         public ActionResult postEmpresa([FromBody] EmpresaRequest request)
         {
             try
@@ -94,5 +116,7 @@ namespace Sistema_Nominas.Service
                 return BadRequest(ex.Message);
             }
         }
+
+        
     }
 }

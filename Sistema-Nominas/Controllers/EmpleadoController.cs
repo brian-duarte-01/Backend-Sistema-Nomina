@@ -35,7 +35,7 @@ namespace Sistema_Nominas.Controllers
         }
 
         [HttpGet]
-        [Route("Visualizar/{id}")]
+        [Route("{id}")]
         public ActionResult getVisualizarEmpleado(int id)
         {
             return er.getVisualizarEmpleado(id);

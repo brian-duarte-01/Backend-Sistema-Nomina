@@ -29,7 +29,7 @@ namespace Sistema_Nominas.Controllers
 
 
         [HttpGet]
-        [Route("Visualizar/{id}")]
+        [Route("{id}")]
         public ActionResult getVisualizar(int id)
         {
             return ar.getVisualizar(id);
@@ -53,6 +53,13 @@ namespace Sistema_Nominas.Controllers
         public ActionResult delete(int id)
         {
             return ar.delete(id);
+        }
+
+
+        [HttpPut]
+        public ActionResult pagar([FromBody] AguinaldoPagarRequest request)
+        {
+            return ar.pagar(request);
         }
     }
 }

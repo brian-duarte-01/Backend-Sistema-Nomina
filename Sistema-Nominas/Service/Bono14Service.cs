@@ -162,5 +162,26 @@ namespace Sistema_Nominas.Service
                 return BadRequest();
             }
         }
+
+        public ActionResult pagar([FromBody] Bono14PagarRequest request)
+        {
+            try
+            {
+                using (Models.ModelContext db = new Models.ModelContext())
+                {
+                    foreach (var item in db.Bono14s)
+                    {
+                        item.Estado = request.estado;
+                        db.Entry(item).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+                    }
+                    db.SaveChanges();
+                    return Ok("Se realizo correctamente!!");
+                }
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);
+            }
+        }
     }
 }

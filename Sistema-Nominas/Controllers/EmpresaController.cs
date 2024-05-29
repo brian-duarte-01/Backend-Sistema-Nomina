@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Sistema_Nominas.Interface;
 using Sistema_Nominas.Repositorie;
 using Sistema_Nominas.Request;
 using Sistema_Nominas.Service;
@@ -18,6 +19,13 @@ namespace Sistema_Nominas.Controllers
         public ActionResult getEmpresa()
         {
             return er.getEmpresa();
+        }
+
+        [HttpGet]
+        [Route("{id}")]
+        public ActionResult obtenerEmpresa(int id)
+        {
+            return er.obtenerEmpresa(id);
         }
 
         // realizamos la peticion Post
@@ -44,5 +52,7 @@ namespace Sistema_Nominas.Controllers
         {
             return er.deleteEmpresa(id);
         }
+
+       
     }
 }

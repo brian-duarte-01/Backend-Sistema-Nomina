@@ -4,7 +4,7 @@ using Sistema_Nominas.Request;
 
 namespace Sistema_Nominas.Repositorie
 {
-    public class EstadoRepositorie 
+    public class EstadoRepositorie
     {
 
         public IEstado iestado;
@@ -23,6 +23,11 @@ namespace Sistema_Nominas.Repositorie
             return this.iestado.getEstado();    
         }
 
+        public ActionResult obtenerEstado(int id)
+        {
+            return this.iestado.obtenerEstado(id);
+        }
+
         public ActionResult postEstado([FromBody] EstadoRequest request)
         {
             return this.iestado.postEstado(request);
@@ -37,5 +42,7 @@ namespace Sistema_Nominas.Repositorie
         {
             return this.iestado.deleteEstado(id);
         }
+
+       
     }
 }

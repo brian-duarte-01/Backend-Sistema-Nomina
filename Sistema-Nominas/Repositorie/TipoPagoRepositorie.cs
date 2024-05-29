@@ -4,7 +4,7 @@ using Sistema_Nominas.Request;
 
 namespace Sistema_Nominas.Repositorie
 {
-    public class TipoPagoRepositorie 
+    public class TipoPagoRepositorie
     {
 
         public ITipoPago itipo;
@@ -24,6 +24,11 @@ namespace Sistema_Nominas.Repositorie
             return this.itipo.getTipoPago();
         }
 
+        public ActionResult obtenerTipoPago(int id)
+        {
+            return this.itipo.obtenerTipoPago(id);
+        }
+
         public ActionResult postTipoPago([FromBody] TipoPagoRequest request)
         {
             return this.itipo.postTipoPago(request);
@@ -39,5 +44,6 @@ namespace Sistema_Nominas.Repositorie
             return this.itipo.deleteTipoPago(id);
         }
 
+        
     }
 }

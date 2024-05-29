@@ -9,6 +9,7 @@ namespace Sistema_Nominas.Interface
         public ActionResult getVisualizar(int id);
         public ActionResult post([FromBody] Request.Bono14Request request);
         public ActionResult put(int id, [FromBody] Request.Bono14Request request);
+        public ActionResult pagar([FromBody] Request.Bono14PagarRequest request);
         public ActionResult delete(int id);
     }
 }

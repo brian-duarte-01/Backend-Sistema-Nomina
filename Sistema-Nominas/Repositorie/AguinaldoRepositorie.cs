@@ -43,5 +43,10 @@ namespace Sistema_Nominas.Repositorie
         {
             return this.iaguinaldo.delete(id);
         }
+
+        public ActionResult pagar([FromBody] AguinaldoPagarRequest request)
+        {
+            return this.iaguinaldo.pagar(request);
+        }
     }
 }

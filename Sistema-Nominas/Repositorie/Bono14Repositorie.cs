@@ -44,5 +44,10 @@ namespace Sistema_Nominas.Repositorie
         {
             return this.ibono.delete(id);
         }
+
+        public ActionResult pagar([FromBody] Bono14PagarRequest request)
+        {
+            return this.ibono.pagar(request);
+        }
     }
 }

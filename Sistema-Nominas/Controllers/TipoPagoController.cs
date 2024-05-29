@@ -27,6 +27,13 @@ namespace Sistema_Nominas.Controllers
             return tr.getTipoPago();
         }
 
+        [HttpGet]
+        [Route("{id}")]
+        public ActionResult obtenerTipoPago(int id)
+        {
+            return tr.obtenerTipoPago(id);
+        }
+
         [HttpPost]
         public ActionResult postTipoPago([FromBody] TipoPagoRequest request)
         {
@@ -46,5 +53,7 @@ namespace Sistema_Nominas.Controllers
         {
             return tr.deleteTipoPago(id);
         }
+
+        
     }
 }
